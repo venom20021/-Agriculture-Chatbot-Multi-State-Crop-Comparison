@@ -30,26 +30,23 @@ An interactive **Streamlit** app to explore and compare top crop production acro
    cd <repo_folder>
    
 2. Create and activate a virtual environment:
-
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
 
 
 3. Install dependencies:
+   py -m pip install -r requirements.txt
 
-py -m pip install -r requirements.txt
 
-
-4. Start the backend:
-
-uvicorn backend:app --reload
+5. Start the backend:
+   uvicorn backend:app --reload
 
 
 5. Start the frontend:
-
-streamlit run frontend.py
------------------------------------------------------------------------------------
+   streamlit run frontend.py
+   
+   -----------------------------------------------------------------------------------
 Usage
 
 Open the Streamlit app in your browser.
