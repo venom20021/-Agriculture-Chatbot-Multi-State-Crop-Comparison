@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-API_KEY = "579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b"
+API_KEY = "enter you api key"
 RESOURCE_ID = "35be999b-0208-4354-b557-f6ca9a5355de"
 
 @app.get("/top_crops/{state}")
@@ -45,3 +45,4 @@ def get_top_crops(state: str):
 
     except Exception as e:
         return {"error": str(e)}
+
